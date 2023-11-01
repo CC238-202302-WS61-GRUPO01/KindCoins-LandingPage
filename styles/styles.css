@@ -1,38 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* NAV*/
-.navbar{
+.navbar {
     color: #ffffff;
 }
 
-.nav-item a{
+.nav-item a {
     color: white;
     text-decoration: none;
 }
 
-.bg-helpingHand{
+.bg-helpingHand {
     background-color: #0597A6;
 }
 
-.img-navbar{
+.img-navbar {
     border-radius: 5px;
-    height: 40px;
+    height: 50px;
 }
 
-.features h4{
+.features h4 {
     color: #0597A6;
-    
+
 }
-
-
-
 
 /* NAV*/
 
 /* CARRUSEL*/
+.carousel-caption {
+    color: #fff;
+    /* Cambia el color del texto a blanco para que sea visible sobre el fondo oscuro */
+    z-index: 2;
+    /* Espaciado interno para mejorar la legibilidad */
+}
+
+/* También puedes personalizar el estilo del botón dentro del carousel-caption */
+.carousel-caption .btn {
+    color: #fff;
+    background-color: #0597A6;
+    /* Puedes cambiar este color según tu paleta de colores */
+    border-color: #0597A6;
+    /* También puedes cambiar el color del borde si es necesario */
+}
+
+.carousel-caption .btn:hover {
+    color: #fff;
+    background-color: #0D6F7C; /* Puedes cambiar este color al que prefieras al pasar el mouse */
+    border-color: #0D6F7C;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Ajusta el valor alpha (cuarto valor) según la intensidad de oscuridad que desees */
+    z-index: 1;
+    /* Asegura que el fondo oscuro esté sobre la imagen */
+}
+
+.carousel-item img {
+    height: 700px;
+    /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
+    /* Para asegurarse de que la imagen cubra el área especificada */
+}
+
 .carousel-caption h1 {
     color: #FFDE59;
 }
 
-.carousel-caption p {
+.carousel-caption p{
     color: white;
 }
 /* CARRUSEL*/
@@ -44,31 +89,31 @@
 /* FUNCIONALIDAD*/
 
 /* PLANES*/
-.planes{
+.planes {
     background-color: #0597A6;
 }
 
-.plan{
+.plan {
     color: #00DDE3;
 }
 
-ul{
+ul {
     color: #000000;
 }
 
-.header-section{
+.header-section {
     color: #ffffff;
 }
 
-.tittle-plan{
+.tittle-plan {
     color: #0597A6;
 }
 
-.justify{
+.justify {
     color: #ffffff;
 }
 
-.color-descuento{
+.color-descuento {
     color: #FF6767;
     font-size: small;
 }
@@ -77,34 +122,35 @@ ul{
 
 
 /* Descarga*/
-.color-HH{
+.color-HH {
     color: #0597A6;
 }
 
-.color-HH1{
+.color-HH1 {
     color: #63CAA7;
 }
 
 /* Descarga*/
 
 /* Conoce más*/
-.ConoceMas{
+.ConoceMas {
     background-color: #0597A6;
     color: white;
 }
 
-.color-HH-alternative{
+.color-HH-alternative {
     color: #dcb73d;
 }
 
-.title-ConoceMas{
+.title-ConoceMas {
     padding: 25px;
 }
+
 /* Conoce más*/
 
 /*Contactenos*/
 
-textarea{
+textarea {
     border-color: #000000;
     border-radius: 15px;
 }
@@ -113,23 +159,23 @@ textarea{
 
 /*Footer*/
 
-footer{
+footer {
     background-color: #0597A6;
 }
 
-.ul-footer{
+.ul-footer {
     text-decoration: none;
     color: white;
     list-style: none;
 }
 
-.footer-right{
+.footer-right {
     color: white;
 }
 
-.socialMedia a{
+.socialMedia a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 ion-icon {
